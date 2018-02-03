@@ -1116,6 +1116,11 @@ only screen and (min-resolution: 192dpi) {
   margin-left: -5px;
 }
 
+/********* PLANFIX *********/
+.toggl-button.planfix {
+  margin-right: 5px;
+}
+
 /********* EPROJECT *********/
 .toggl-timer {
   margin-left: 5px !important;
