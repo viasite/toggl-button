@@ -7,7 +7,7 @@
   },
   "name": "Toggl Button: Planfix edition",
   "short_name": "Toggl Button: Planfix edition",
-  "version": "1.9.1",
+  "version": "1.10.2",
   "manifest_version": 2,
   "description": "Fork of Toggl Button extenstion for using it with planfix.ru",
   "background": {

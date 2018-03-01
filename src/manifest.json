@@ -1,7 +1,7 @@
 {
   "name": "Toggl Button: Planfix edition",
   "short_name": "Toggl Button: Planfix",
-  "version": "1.9.1",
+  "version": "1.10.2",
   "manifest_version": 2,
   "description": "Fork of Toggl Button extenstion for using it with planfix.ru",
   "background": {
@@ -34,7 +34,6 @@
     "48": "images/icon-48.png",
     "128": "images/icon-128.png"
   },
-  "options_page": "html/settings.html",
   "options_ui": {
     "page": "html/settings.html",
     "chrome_style": true
