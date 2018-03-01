@@ -118,10 +118,10 @@ Add Toggl one-click time tracking to popular web tools.
 ## Installing from the Web Store/Addons page
 
 __Chrome__
-https://chrome.google.com/webstore/detail/toggl-button/oejgccbfbmkkpaidnkphaiaecficdnfn
+https://chrome.google.com/webstore/detail/toggl-button-planfix-edit/hkhchfdjhfegkhkgjongbodaphidfmcl
 
 __Firefox__
-https://addons.mozilla.org/en-US/firefox/addon/toggl-button-time-tracker/
+https://addons.mozilla.org/ru/firefox/addon/toggl-button-planfix/
 
 ## Installing from Source
 Works for Chrome only:
