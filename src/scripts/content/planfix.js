@@ -7,7 +7,7 @@ togglbutton.render('.taskCard-header-data-blocks .b-green-block-taskAfterLabel',
     numElem = $('.b-task-general-id a'),
     titleElem = $('.b-task-param-editable a'),
     projectElem = $('.task-project-text a'),
-    existingTag = $('.b-toggl-btn.toggl');
+    existingTag = $('.b-toggl-btn.toggl.planfix');
 
   if (existingTag) {
     if (existingTag.parentNode.firstChild.classList.contains('toggl')) {
@@ -21,9 +21,6 @@ togglbutton.render('.taskCard-header-data-blocks .b-green-block-taskAfterLabel',
     description = description.trim();
     tags = [ numElem.textContent.replace('#', '') ];
   }
-
-  div = document.createElement("div");
-  div.classList.add("b-toggl-btn", "toggl");
 
   link = togglbutton.createTimerLink({
     className: 'planfix',

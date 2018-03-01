@@ -1117,7 +1117,12 @@ only screen and (min-resolution: 192dpi) {
 }
 
 /********* PLANFIX *********/
+.b-toggl-btn.planfix {
+  display: flex;
+  align-items: center;
+}
 .toggl-button.planfix {
+  height: 20px;
   margin-right: 5px;
 }
 
