@@ -1,7 +1,7 @@
 {
   "applications": {
     "gecko": {
-      "id": "toggl-button@toggl.com",
+      "id": "toggl-button-planfix@viasite.ru",
       "strict_min_version": "50.0"
     }
   },
