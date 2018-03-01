@@ -22,6 +22,10 @@ togglbutton.render('.taskCard-header-data-blocks .b-green-block-taskAfterLabel',
     tags = [ numElem.textContent.replace('#', '') ];
   }
 
+  div = document.createElement("div");
+  div.classList.add("b-toggl-btn", "toggl", "planfix");
+  div.style.display = "flex";
+
   link = togglbutton.createTimerLink({
     className: 'planfix',
     description: description,

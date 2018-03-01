@@ -314,10 +314,6 @@
     "url": "*://*.planbox.com/*",
     "name": "Planbox"
   },
-  "planfix.com": {
-    "url": "*://*.planfix.com/*",
-    "name": "Planfix"
-  },
   "planfix.ru": {
     "url": "*://*.planfix.ru/*",
     "name": "Planfix"
