@@ -5,11 +5,11 @@
       "strict_min_version": "50.0"
     }
   },
-  "name": "Toggl Button: Productivity & Time Tracker",
-  "short_name": "Toggl Button",
-  "version": "1.9.0",
+  "name": "Toggl Button: Planfix edition",
+  "short_name": "Toggl Button: Planfix edition",
+  "version": "1.9.1",
   "manifest_version": 2,
-  "description": "Puts a timer into any web tool and allows quick real time productivity tracking with all the data stored on your Toggl account",
+  "description": "Fork of Toggl Button extenstion for using it with planfix.ru",
   "background": {
     "scripts": [
       "scripts/vendor/bugsnag-3.min.js",
