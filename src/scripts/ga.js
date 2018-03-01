@@ -1,5 +1,5 @@
 /*jslint indent: 2, unparam: true, plusplus: true, nomen: true */
-/*global Db: true, window: false, XMLHttpRequest: false, chrome: false, localStorage:false, Bugsnag: false */
+/*global Db: true, window: false, XMLHttpRequest: false, chrome: false, localStorage:false */
 "use strict";
 
 var GA_TRACKING_ID = "UA-3215787-22",

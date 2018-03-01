@@ -1,5 +1,5 @@
 /*jslint indent: 2, unparam: true, plusplus: true, nomen: true */
-/*global navigator: false, window: false, TogglOrigins: false, TogglButton: false, XMLHttpRequest: false, WebSocket: false, chrome: false, btoa: false, localStorage:false, document: false, Audio: false, Bugsnag: false */
+/*global navigator: false, window: false, TogglOrigins: false, TogglButton: false, XMLHttpRequest: false, WebSocket: false, chrome: false, btoa: false, localStorage:false, document: false, Audio: false */
 "use strict";
 
 var Db = {
@@ -239,7 +239,7 @@ var Db = {
         Db.updateSetting(request.type.substr(7), request.state);
       }
     } catch (e) {
-      Bugsnag.notifyException(e);
+      console.log(e);
     }
 
     return true;

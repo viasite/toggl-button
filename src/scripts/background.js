@@ -1,5 +1,5 @@
 /*jslint indent: 2, unparam: true, plusplus: true, nomen: true */
-/*global secToHHMM: true, debug: true, console: false, report: true, escapeHtml: true, GA: false, window: false, setTimeout: false, clearTimeout: false, setInterval: false, clearInterval: false, Db: false, XMLHttpRequest: false, Image: false, WebSocket: false, navigator: false, chrome: false, btoa: false, localStorage:false, document: false, Audio: false, Bugsnag: false */
+/*global secToHHMM: true, debug: true, console: false, report: true, escapeHtml: true, GA: false, window: false, setTimeout: false, clearTimeout: false, setInterval: false, clearInterval: false, Db: false, XMLHttpRequest: false, Image: false, WebSocket: false, navigator: false, chrome: false, btoa: false, localStorage:false, document: false, Audio: false */
 "use strict";
 
 var openWindowsCount = 0,
@@ -141,7 +141,6 @@ var TogglButton = {
             }
             TogglButton.setBrowserActionBadge();
             TogglButton.setupSocket();
-            TogglButton.updateBugsnag();
             TogglButton.handleQueue();
             TogglButton.setCanSeeBillable();
             GA.reportOs();
@@ -172,13 +171,6 @@ var TogglButton = {
     while (!!TogglButton.queue.length) {
       TogglButton.queue.shift()();
     }
-  },
-
-  updateBugsnag: function () {
-    // Set user data
-    Bugsnag.user = {
-      id: TogglButton.$user.id
-    };
   },
 
   setCanSeeBillable: function () {
@@ -1506,18 +1498,7 @@ var TogglButton = {
           console.log(error);
           console.log(request.category + " Script Error [" + errorSource + "]");
         } else {
-          if (request.category === "Content") {
-            errorSource = request.stack.split("content/")[1];
-            if (!!errorSource) {
-              errorSource = errorSource.split(".js")[0];
-            } else {
-              errorSource = "Unknown";
-            }
-
-            Bugsnag.notifyException(error, request.category + " Script Error [" + errorSource + "]");
-          } else {
-            report(error);
-          }
+          report(error);
         }
       } else if (request.type === 'options') {
         chrome.runtime.openOptionsPage();

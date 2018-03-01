@@ -1,5 +1,5 @@
 /*jslint indent: 2, unparam: true, plusplus: true, nomen: true */
-/*global console: false, window: false, navigator: false, chrome: false, localStorage:false, Bugsnag: false */
+/*global console: false, window: false, navigator: false, chrome: false, localStorage:false */
 "use strict";
 
 var report,
@@ -19,18 +19,9 @@ var report,
   },
   secToHHMM;
 
-Bugsnag.apiKey = "7419717b29de539ab0fbe35dcd7ca19d";
-Bugsnag.appVersion = chrome.runtime.getManifest().version;
-
-Bugsnag.beforeNotify = function (error, metaData) {
-  error.stacktrace = error.stacktrace.replace(/chrome-extension:/g, "chromeextension:");
-};
-
 report = function (e) {
   if (debug) {
     console.log(e);
-  } else {
-    Bugsnag.notifyException(e);
   }
 };
 
