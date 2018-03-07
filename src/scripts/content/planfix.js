@@ -5,9 +5,15 @@
 togglbutton.render('.taskCard-header-data-blocks .b-green-block-taskAfterLabel', {observe: true}, function (elem) {
   var div, link, description, tags, projectId,
     numElem = $('.b-task-general-id a'),
-    titleElem = $('.b-task-param-editable a'),
     projectElem = $('.task-project-text a'),
-    existingTag = $('.b-toggl-btn.toggl.planfix');
+    existingTag = $('.b-toggl-btn.toggl.planfix'),
+    titleElem;
+
+  titleElem = $('.b-task-param-editable a');
+  if(titleElem == null){
+    // for users
+    titleElem = $('.taskCard-header-data-blocks > .b-green-block > div > div')
+  }
 
   if (existingTag) {
     if (existingTag.parentNode.firstChild.classList.contains('toggl')) {
